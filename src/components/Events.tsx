@@ -77,9 +77,6 @@ export const Events = ({ onRSVPClick }: EventsProps) => {
                   </ul>
                 </div>
 
-                <Button onClick={onRSVPClick} variant="hero" size="lg">
-                  RSVP Now
-                </Button>
               </div>
 
               <div className="lg:w-64 p-6 rounded-lg bg-card border border-border">
@@ -103,15 +100,6 @@ export const Events = ({ onRSVPClick }: EventsProps) => {
           </div>
         </div>
 
-        {/* Join GroupMe CTA */}
-        <div className="max-w-4xl mx-auto mt-8 p-6 rounded-lg bg-primary/10 border border-primary/20 text-center">
-          <p className="text-foreground mb-2">
-            Stay updated on all meetings and announcements
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Join our GroupMe for real-time updates and community discussions
-          </p>
-        </div>
       </div>
     </section>
   );

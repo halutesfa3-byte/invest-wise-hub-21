@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Instagram, MessageSquare } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 import iscLogo from "@/assets/isc-logo.png";
 
 export const Footer = () => {
@@ -52,28 +52,20 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Connect</h4>
             <div className="flex gap-3">
               <a
-                href="mailto:isc@example.edu"
-                className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
-              >
-                <Mail className="w-5 h-5 text-primary" />
-              </a>
-              <a
-                href="#"
+                href="https://www.linkedin.com/company/investment-strategies-club"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
                 <Linkedin className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/investmentstrategiesclub/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
                 <Instagram className="w-5 h-5 text-primary" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
-              >
-                <MessageSquare className="w-5 h-5 text-primary" />
               </a>
             </div>
           </div>

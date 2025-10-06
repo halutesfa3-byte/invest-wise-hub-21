@@ -55,9 +55,6 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
             >
               Contact
             </button>
-            <Button onClick={onJoinClick} variant="hero" size="lg">
-              Join ISC
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,9 +95,6 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
             >
               Contact
             </button>
-            <Button onClick={onJoinClick} variant="hero" size="lg" className="w-full">
-              Join ISC
-            </Button>
           </div>
         </div>
       )}
