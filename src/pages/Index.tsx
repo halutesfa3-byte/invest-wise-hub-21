@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Navigation } from "@/components/Navigation";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Events } from "@/components/Events";
+import { Notes } from "@/components/Notes";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { JoinDialog } from "@/components/JoinDialog";
 
 const Index = () => {
+  const [joinDialogOpen, setJoinDialogOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navigation onJoinClick={() => setJoinDialogOpen(true)} />
+      <Hero onJoinClick={() => setJoinDialogOpen(true)} />
+      <About />
+      <Events onRSVPClick={() => setJoinDialogOpen(true)} />
+      <Notes />
+      <Contact onJoinClick={() => setJoinDialogOpen(true)} />
+      <Footer />
+      <JoinDialog open={joinDialogOpen} onOpenChange={setJoinDialogOpen} />
     </div>
   );
 };
